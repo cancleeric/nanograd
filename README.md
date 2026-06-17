@@ -8,6 +8,9 @@ multi-layer perceptron with real backpropagation.
 It answers the question every deep-learning framework hides behind C++ kernels:
 **how does `.backward()` actually work?**
 
+![decision boundary](docs/decision-boundary.png)
+*A 337-parameter MLP, trained only via this engine's backprop, separating two interleaving moons (100% accuracy).*
+
 ## The idea in 30 seconds
 
 Every number is wrapped in a `Value` that remembers the operation that produced
