@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nanograd"
+version = "0.1.0"
+description = "A tiny reverse-mode autograd engine and neural-net library in pure Python"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Eric Wang", email = "cancleeric@users.noreply.github.com" }]
+keywords = ["autograd", "backpropagation", "deep-learning", "education"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+plot = ["matplotlib>=3.7", "numpy>=1.24"]
+
+[tool.setuptools.packages.find]
+include = ["nanograd*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
